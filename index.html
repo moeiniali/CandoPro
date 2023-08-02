@@ -6,17 +6,21 @@
     <title>Document</title>
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./jquery/jquery-3.7.0.min.js"></script>
+    <script src="./jquery/jquery-3.7.0.js"></script>
+
   </head>
   <body>
     <main dir="lft">
       <!--header---------------------- -->
 <header class=" w-full h-24 max-md:h-16"><div></div>
 <div class="w-full h-full flex">
-  <div class="bg-green-400 grow-[1]  flex items-center">
+  <div class="bg-white shadow-2xl grow-[1]  flex items-center">
     <img src="./assets/images/header/logo.png" alt="logo" width="130px" height="32px" class="ml-14 max-md:ml-4">
   </div>
   
-  <div class="bg-green-100 grow-[2] max-md:hidden flex  justify-center items-center">
+  <div class="bg-white grow-[2] max-md:hidden flex  justify-center items-center">
     <ul class="flex w-full justify-center text-base font-medium gap-16 max-lg:gap-6">
       <li>Home</li>
       <li>Shop</li>
@@ -30,10 +34,32 @@
       <img src="./assets/images/header/icons8-menu-30 (1).png " alt="" width="30px" height="30px"> 
     </button>
 </div>
-<div id="toggle" class="max-w-full overflow-hidden w-96 h-full bg-blue-500 mt-16 z-50 right-0 absolute ">212112</div>
+
+<div id="toggle" class="max-w-full overflow-hidden  w-96 h-96 bg-white mt-16 z-50 right-0 absolute md:hidden rounded-lg">  
+<div class="w-full h-full flex justify-start items-center flex-col   pt-8 shadow gap-4 ">
+  <div class="w-4/5 h-12 border shadow flex flex-row justify-between px-4 flex-wrap items-center gap-4 rounded  hover:animate-bounce cursor-pointer">
+    <span class="text-base font-medium">login</span>
+    <img src="./assets/images/header/mdi_account-alert-outline.png" alt="" width="35px" height="35px" >
+  </div>
+  <div class="w-4/5 h-12 border shadow flex flex-row justify-between px-4 flex-wrap items-center gap-4 rounded  hover:animate-bounce cursor-pointer">
+    <span class="text-base font-medium">search</span>
+    <img src="./assets/images/header/akar-icons_search.png" alt="" width="35px" height="35px">
+  </div>
+  <div class="w-4/5 h-12 border shadow flex flex-row justify-between px-4 flex-wrap items-center gap-4 rounded  hover:animate-bounce cursor-pointer">
+    <span class="text-base font-medium">Favorites</span>
+    <img src="./assets/images/header/akar-icons_heart.png" alt="" width="35px" height="35px">
+  </div>
+  <div class="w-4/5 h-12 border shadow flex flex-row justify-between px-4 flex-wrap items-center gap-4 rounded  hover:animate-bounce cursor-pointer">
+    <span class="text-base font-medium">shop</span>
+    <img src="./assets/images/header/ant-design_shopping-cart-outlined.png" alt="" width="35px" height="35px">
+  </div>
+
+</div>
+
+</div>
 
 
-  <div class="bg-green-900 grow-[1]  max-sm:hidden flex items-center gap-11 max-md:gap-4 content-center justify-center ">
+  <div id="menu_item" class="bg-white grow-[1]  max-sm:hidden flex items-center gap-11 max-md:gap-4 content-center justify-center max-md:hidden">
     <img src="./assets/images/header/mdi_account-alert-outline.png" alt="" width="25px" height="25px">
     <img src="./assets/images/header/akar-icons_search.png" alt="" width="25px" height="25px">
     <img src="./assets/images/header/akar-icons_heart.png" alt="" width="25px" height="25px">
@@ -48,9 +74,9 @@
 
 
       <!--slider---------------------------- -->
-      <div id="slider" class="w-full h-full bg-blue-400">
-        <img src="./assets/images/scandinavian-interior-mockup-wall-decal-background 1.png" alt="">
-        <img src="./assets/images/ص" alt="">
+      <div id="slider" class="w-full h-full ">
+        <img src="./assets/images/header/Mask Group.jpg" alt="">
+    
       </div>
 
       <!-- range----------------------------->
@@ -71,6 +97,6 @@
 
 
     <script src="./js/header.js"></script>
-    <script src="./jquery/header.js"></script>
+    <script src="./jquery/head.js"></script>
   </body>
 </html>
