@@ -8,3 +8,8 @@
 // function handleToggleFalse(){
 //     toggle.style.display ="block";
 // }
+let productView = document.getElementById("productView");
+function handleFocus(){
+    console.log("dsfsdf");
+    productView.style.opacity = "50%";
+}
