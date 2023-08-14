@@ -7,6 +7,7 @@
   <title>Document</title>
   <link href="./dist/output.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 
   <script src="./jquery/jquery-3.7.0.min.js"></script>
   <script src="./jquery/jquery-3.7.0.js"></script>
@@ -119,22 +120,45 @@
 
 
     <!-- article--------------------------- -->
-    <article class="w-full h-auto bg-blue-300 mt-10 ">
-
+    <article class="w-full h-auto bg-blue-300 mt-10  ">
       <div class="w-11/12 h-full m-auto gap-8 flex flex-row py-4 flex-wrap  z-0">
         <div id="productView"
-          class="w-1/4 flex overflow-none bg-white  flex-col justify-end text-left flex-erap  h-full  rounded-md "
-          onmouseover="handleFocus()">
+          class="w-1/4 max-sm:w-full  flex overflow-none relative bg-green-400  flex-col justify-end text-left flex-erap  h-full  rounded-md ">
+          <!-- hover add to cart----------------------------- -->
+          <div class="   grid col-span-3 row-span-2 content-center gap-y-4  h-full w-full absolute  ">
 
-          <div class="w-full flex items-start justify-end ">
+            <button
+              class="ali font-semibold py-3 w-3/4 rounded-md m-auto max-w-xs bg-white  text-[#B88E2F]   col-span-3 row-span-1">Add
+              to cart</button>
+
+            <div class=" w-full h-10 col-span-1 row-span-1 flex flex-nowrap items-center gap-1">
+              <img src="./assets/images/icons/gridicons_share.png" alt="" class="w-4 h-4">
+              <a href="#" class="clamp_f_12_16 font-semibold text-white">share</a>
+            </div>
+
+            <div class=" w-full h-10 col-span-1 row-span-1 flex flex-nowrap items-center gap-1">
+              <img src="./assets/images/icons/compare-svgrepo-com 1.png" alt="" class="w-4 h-4">
+              <a href="#" class="clamp_f_12_16 font-semibold text-white">Compare</a>
+            </div>
+
+            <div class=" w-full h-10 col-span-1 row-span-1 mb-20 flex flex-nowrap items-center gap-1">
+              <img src="./assets/images/icons/Heart.png" alt="" class="w-4 h-4">
+              <a href="#" class="clamp_f_12_16 font-semibold text-white ">Like</a>
+            </div>
+
+          </div>
+          <!-- product box ------------------------------------>
+          <div class="w-full h-full flex items-start justify-end">
             <span
               class="w-9 h-8  absolute flex mt-1 mr-1 bg-red-500 items-center justify-center content-center text-white text-xs  rounded-[50%] py-2 px-1">30%</span>
-            <img src="./assets/images/Products/image 1.png" alt="" class="w-full  rounded-se-md rounded-ss-md">
+            <img src="./assets/images/Products/image 1.png" alt=""
+              class="w-full  rounded-se-md rounded-ss-md cursor-pointer">
+
           </div>
           <div class="bg-gray-100 h-36 flex flex-col pl-2 gap-4">
             <h1 class="text-2xl font-semibold text-[#3A3A3A] ">Syltherine</h1>
             <p class="text-base font-medium text-[#898989]">Stylish cafe chair</p>
-            <div class="flex flex-row  justify-between  flex-wrap ">
+            <div class="flex flex-row  justify-between  flex-wrap">
               <strong class="text-lg font-bold text-[#3A3A3A]">Rp 2.500.000</strong>
               <del class="text-base font-semibold text-[#898989] mr-4">Rp 3.500.000</del>
             </div>
