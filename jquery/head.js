@@ -8,10 +8,10 @@ $(document).ready(function () {
   function handleResize() {
     if ($(window).width() >= 768) {
       $('#toggle').hide();
-    }else if($(window).width() <=768){
+    }else if($(window).width() <= 768){
       $('#toggle').hide();
     } else{
-    $('#toggle').show();  
+      $('#toggle').show();
     }
   }
 

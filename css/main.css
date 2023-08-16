@@ -1,0 +1,4 @@
+.clamp_f_12_16
+{
+font-size:clamp(12px , 2vh ,16px);
+}
