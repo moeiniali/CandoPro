@@ -2,6 +2,13 @@
  font-size: clamp(12px, 2vh, 16px);
 }
 
+body,
+html {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
 /* .next{
  transform:translateX(100px) ;
  animation-duration: 1s;
@@ -16,7 +23,7 @@
  width: 92%;
  height: 500px;
  position: relative;
- margin: 40px auto 40px auto;
+ margin: 10px auto 40px auto;
  overflow-x: scroll;
  overflow-y: hidden;
 }
@@ -77,6 +84,7 @@
 
 .ctrl-btn.pro-next {
  right: 0;
+
 }
 
 .slider-product img {

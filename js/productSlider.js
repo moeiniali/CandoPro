@@ -26,8 +26,6 @@
 
 productScroll();
 
-
-
 function productScroll() {
 
   let slider = document.getElementById("slider");
@@ -35,11 +33,12 @@ function productScroll() {
   let next = document.getElementsByClassName("pro-next")
   let prev = document.getElementsByClassName("pro-prev")
 
+
   for (let i = 0; i < next.length; i++) {
     let position = 0;
 
     prev[i].addEventListener('click', function () {
-      if (position > 0) {
+      if (position > 0 ) {
         position -= 1;
         console.log(position);
         translateX(position)
@@ -57,8 +56,14 @@ function productScroll() {
         slide.style.left = 0;
 
       }
+      slider.addEventListener('scroll' , function(){
+        console.log("nextId");
+      
+      })
+
     });
   }
+
 
   function hiddenItems() {
     //get hidden items
